@@ -1,15 +1,16 @@
 class Person
-  attr_accessor :name, :job
-
-  @@all = []
-
-  def initialize(name, job)
+  def name=(name)
     @name = name
-    @job = job
-    @@all << self
+  end
+  def name
+    @name
   end
 
-  def self.all
-    @@all
+  def job=(job)
+    @job = job
+  end
+
+  def job
+    @job
   end
 end
